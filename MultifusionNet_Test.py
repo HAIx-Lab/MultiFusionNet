@@ -1,7 +1,7 @@
 from keras.models import load_model
 from sklearn.metrics import accuracy_score
 
-model1 = load_model('path')
+model = load_model('path')
 
 test_data_dir='path'
 test_data_generator = ImageDataGenerator(rescale=1./255)
