@@ -25,21 +25,38 @@ for layer in base_model1.layers:
   layer.trainable=False
 base_model1.summary()
 
-#a=base_model1.get_layer("conv5_block2_3_conv").outputconv3_block3_2_conv
-a=base_model1.get_layer("conv3_block3_2_conv").output
+#a=base_model1.get_layer("conv15_block2_3_conv").outputconv3_block3_2_conv
+a=base_model1.get_layer("conv13_block3_2_conv").output
 a=MaxPooling2D()(a)
 a=MaxPooling2D()(a)
-b=base_model1.get_layer("conv4_block6_3_conv").output
-c=base_model1.get_layer("conv3_block4_3_conv").output
+b=base_model1.get_layer("conv14_block6_3_conv").output
+c=base_model1.get_layer("conv13_block4_3_conv").output
 c=MaxPooling2D()(c)
-d=base_model1.get_layer("conv2_block3_3_conv").output
+d=base_model1.get_layer("conv12_block3_3_conv").output
 d=MaxPooling2D()(d)
 d=MaxPooling2D()(d)
-print(a.shape)
-print(b.shape)
-print(c.shape)
-print(d.shape)
-abcd=concatenate([a,b,c,d], axis=-1)
+#a=base_model1.get_layer("conv25_block2_3_conv").outputconv3_block3_2_conv
+e=base_model1.get_layer("conv23_block3_2_conv").output
+a=base_model1.get_layer("conv23_block3_2_conv").output
+e=MaxPooling2D()(e)
+e=MaxPooling2D()(e)
+f=base_model1.get_layer("conv24_block6_3_conv").output
+g=base_model1.get_layer("conv23_block4_3_conv").output
+g=MaxPooling2D()(g)
+h=base_model1.get_layer("conv22_block3_3_conv").output
+h=MaxPooling2D()(h)
+h=MaxPooling2D()(h)
+i=base_model1.get_layer("conv33_block3_2_conv").output
+i=MaxPooling2D()(i)
+j=base_model1.get_layer("conv34_block6_3_conv").output
+k=base_model1.get_layer("conv33_block4_3_conv").output
+k=MaxPooling2D()(k)
+l=base_model1.get_layer("conv32_block3_3_conv").output
+l=MaxPooling2D()(l)
+m=MaxPooling2D()(m)
+n=base_model1.get_layer("conv33_block3_2_conv").output
+
+abcd=concatenate([a,b,c,d,e,f,g,h,I,j,k,l,m,n], axis=-1)
 print(abcd.shape)
 
 y = base_model1.output
