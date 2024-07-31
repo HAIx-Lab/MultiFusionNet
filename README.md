@@ -1,5 +1,6 @@
 # MultiFusionNet
 Official repo of the work "MultiFusionNet: Multilayer Multimodal Fusion of Deep Neural Networks for ChestX-Ray Image Classification"
+The original paper available at URL: https://doi.org/10.1007/s00500-024-09901-x
 
 # CoV-Pneum Dataset
 The cov-Pneum dataset was prepared by merging three well-known publicly available sub-datasets from Chowdhury et al. 2020; Kaggle 2021 a, and b. This dataset has 21,272 chest X-ray images of COVID-19, Pneumonia, and Normal cases. 
