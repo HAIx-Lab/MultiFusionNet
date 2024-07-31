@@ -1,5 +1,5 @@
 # MultiFusionNet
-Official repo of the work "MultiFusionNet: Multilayer Multimodal Fusion of Deep Neural Networks for ChestX-Ray Image Classification"
+Official repo of the work "MultiFusionNet: Multilayer Multimodal Fusion of Deep Neural Networks for ChestX-Ray Image Classification."
 The original paper available at URL: https://doi.org/10.1007/s00500-024-09901-x
 
 # CoV-Pneum Dataset
